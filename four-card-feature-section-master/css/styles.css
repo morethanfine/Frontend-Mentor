@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Poppins';
+}
+
+h1, h2 {
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 2em;
+  color: hsl(234, 12%, 34%);
+}
+
+h1 {
+  font-weight: 200;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+  font-size: 1em;
+}
+
+p {
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+  font-size: 0.88em;
+}
+
+/* Set image in place on the right of card */
+img {
+  display: block;
+  margin-left: auto;
+}
+
+header {
+  text-align: center;
+  max-width: 500px;
+  margin: 3rem auto;
+}
+
+header p {
+  max-width: 460px;
+  margin: 1.5rem auto;
+}
+
+/* Cards General */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 2.5rem;
+  max-width: 1140px;
+}
+
+.box {
+  background-color: white;
+  margin: 10px;
+  padding: 5px 20px 20px;
+  width: 300px;
+  /* styling box border */
+  border-top: solid;
+  border-radius: 0.2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.03);
+}
+
+.box p {
+  margin-bottom: 8%;
+}
+
+/* Alignment of cards on the axis */
+.supervisor, .karma {
+  transform: translateY(60%);
+}
+
+/* Card Colours */
+.supervisor {
+  border-color: hsl(180, 62%, 55%);
+}
+
+.team-builder {
+  border-color: hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-color: hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-color: hsl(212, 86%, 64%);
+}
+
+/* Attribution */
+.attribution {
+  padding-top: 10%;
+  text-align: center;
+  font-size: 8px;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 740px) {
+  .supervisor, .karma {
+    transform: translateY(0);
+  }
+}
